@@ -17,5 +17,5 @@ Este é o projeto de uma landing page desenvolvida como parte da tarefa prática
 
 ## Como visualizar
 
-Você pode acessar a página diretamente pelo GitHub Pages (se publicada) ou rodar localmente:
+Você pode acessar a página diretamente pelo GitHub Pages (se publicada) ou rodar localmente.
 
