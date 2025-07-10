@@ -53,12 +53,17 @@
 #about {
     background: var(--gradient);
     text-align: justify;
-    padding: 8% 8%;
+    padding: 2rem;
     color: white;
+
+    display: block;
+    justify-content: center;
+    align-items: center;
 }
 
 #about h2 {
-    margin-bottom: 1rem;
+    font-size: 2.25rem;
+    margin-bottom: 2rem;
 }
 
 #work-method {

@@ -8,6 +8,10 @@
         text-align: justify;
     }
 
+    #about {
+        padding: 5rem;
+    }
+
     #about h2{
         text-align: center;
     }
