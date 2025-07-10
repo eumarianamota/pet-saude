@@ -1,0 +1,45 @@
+@media (min-width: 615px) {
+    #home {
+        text-align: start;
+    }
+
+    #home .content h1{
+        width: 34rem;
+        text-align: justify;
+    }
+
+    #about h2{
+        text-align: center;
+    }
+
+    .overview-benefits {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .benefit {
+        width: 30%;
+    }
+}
+
+@media (min-width: 910px) {
+    .methods {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: justify;
+    }
+
+    .method {
+        flex: 1 1 0;
+    }
+
+    #call-to-action .content {
+        width: 70%
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
