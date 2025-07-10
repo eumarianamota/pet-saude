@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    /* margin-right: 1rem;
+    margin-left: 1rem; */
+
+
+:root {
+    --primary-color: #0077b6;
+    --secondary-color: #00b4d8;
+    --tertiary-color: #e5f0f0;
+    --gradient: linear-gradient(135deg, #023e8a, #0077b6, #0096c7, #00b4d8)
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 2rem;
+    height: 100vh;
+    width: 100%; 
+}
+
+#home .content h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2.25rem;
+}
+
+#home img {
+    display: none;
+}
+
+.btn-plus, .btn-contact {
+    margin-top: 1rem;
+    color: white;
+    background-color: var(--primary-color);
+    padding: 10px 15px;
+    border: var(--primary-color) solid;
+    border-radius: 30px;
+    transition: 0.5s;
+} 
+
+.btn-plus:hover, .btn-contact:hover {
+    background-color: var(--secondary-color);
+    border: var(--secondary-color) solid;
+    transition: 0.5s;
+}
+
+#about {
+    background: var(--gradient);
+    text-align: start;
+    padding: 8% 8%;
+    color: white;
+}
+
+#about h2 {
+    margin-bottom: 2rem;
+    font-size: 2.25rem;
+}
+
+#about img {
+    display: none;
+}
+
+#work-method {
+    padding: 5%;
+    text-align: center;
+}
+
+#work-method h2 {
+    margin-bottom: 1rem;
+    font-size: 2.25rem;
+}
+
+.method p {
+    padding-top: 1rem;
+    font-size: 0.8rem;
+}
+
+.method {
+    background-color: var(--primary-color);
+    color:white;
+    border-radius: 10px;
+    padding: 15px 15px;
+    margin: 10px;
+    transition: 0.5s;
+}
+
+.method:hover {
+    background-color: var(--secondary-color);
+    transition: 0.5s;
+}
+
+
+#benefits {
+    padding: 0 3%;
+    margin-top: 1rem;
+    margin-bottom: 1rem
+}
+
+#benefits h2{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.benefit {
+    border: var(--primary-color) solid 2px;
+    padding: 15px 15px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.benefit:hover {
+    background-color: var(--secondary-color);
+    transition: 0.5s;
+}
+
+#call-to-action {
+    margin: 2rem 5%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--gradient);
+    padding: 15px 20px;
+    border-radius: 15px;
+
+    text-align: center;
+    color: white;
+}
+
+#call-to-action p {
+    margin: 1rem 0;
+    font-size: 0.8rem;
+}
+
+.btn-cta {
+    padding: 10px 15px;
+    border-radius: 30px;
+    color: var(--primary-color);
+    border: white;
+    background-color: white;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.btn-cta:hover {
+    background-color: rgba(255, 255, 255, 0.633);
+    transition: 0.3s;
+}
+
+footer {
+    padding: 5% 8%;
+    background-color: #003a58;
+    color: white;
+    font-size: 0.5rem;
+
+    display: flex;
+
+    justify-content: space-around;
+    column-gap: 15px;
+}
+
+
+.overview-section {
+    width: 40%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+@media (min-width: 615px) {
+    #home img {
+        display: block;
+    }
+
+    .overview-benefits {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .benefit {
+        width: 30%;
+    }
+
+    .overview-section {
+        width: 20%;
+    }
+
+}
+
+@media (min-width: 910px) {
+    #home {
+        text-align: start;
+    }
+
+    #home .content p{
+        width: 34rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-right: 5rem;
+        text-align: justify;
+    }
+
+    #home img {
+        display: block;
+    }
+
+    .btn-plus, .btn-contact {
+        padding: 15px 20px;
+    } 
+
+    #about {
+        text-align: center;
+    }
+
+    #about img {
+        display: block;
+        width: 415px;
+        padding-right: 3rem;
+    }
+
+    .about-container {
+        margin-top: 2rem;
+        text-align: justify;
+
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .methods {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: justify;
+    }
+
+    .method {
+        flex: 1 1 0;
+    }
+
+    #call-to-action .content {
+        padding: 25px;
+        width: 70%
+    }
+
+    #call-to-action p {
+        font-size: 1rem;
+    }
+
+    .btn-cta {
+        padding: 10px 15px;
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 0.7rem;
+    }
+
+}
